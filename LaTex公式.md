@@ -1,8 +1,3 @@
----
-
-
----
-
 <h4 id="小括号和方括号">小括号和方括号</h4>
 <p><span class="katex--display"><span class="katex-display"><span class="katex"><span class="katex-mathml"><math><semantics><mrow><mo>(</mo><mn>2</mn><mo>+</mo><mn>3</mn><mo>)</mo><mo>[</mo><mn>4</mn><mo>+</mo><mn>4</mn><mo>]</mo></mrow><annotation encoding="application/x-tex">(2+3)[4+4]</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height: 1em; vertical-align: -0.25em;"></span><span class="mopen">(</span><span class="mord">2</span><span class="mspace" style="margin-right: 0.222222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right: 0.222222em;"></span></span><span class="base"><span class="strut" style="height: 1em; vertical-align: -0.25em;"></span><span class="mord">3</span><span class="mclose">)</span><span class="mopen">[</span><span class="mord">4</span><span class="mspace" style="margin-right: 0.222222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right: 0.222222em;"></span></span><span class="base"><span class="strut" style="height: 1em; vertical-align: -0.25em;"></span><span class="mord">4</span><span class="mclose">]</span></span></span></span></span></span></p>
 <pre><code>(2+3)[4+4]
