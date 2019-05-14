@@ -1,4 +1,12 @@
-$$\lbrace\sum_{i=0}^0 i^2 = \frac{(n^2+n)(2n+2)}{6}\rbrace\tag{1.1}$$
+
+### 求和与积分
+
+    \sum_1^n
+$\sum_1^n$
+
+    \int_1^\infty
+$\int_1^\infty$
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTUxMzIyODg3Nl19
+eyJoaXN0b3J5IjpbNjgyODQ2NDk4XX0=
 -->
