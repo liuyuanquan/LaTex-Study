@@ -296,14 +296,112 @@ $$\begin{matrix} 1 & x & x^2 \\ 1 & y & y^2 \\ 1 & z & z^2 \end{matrix}$$
 ```
 
 加括号
-$$\left\(\begin{matrix} 1 & x & x^2 \\ 1 & y & y^2 \\ 1 & z & z^2 \end{matrix}\)$$
+$$\left( \begin{matrix} 1 & x & x^2 \\ 1 & y & y^2 \\ 1 & z & z^2 \end{matrix}  \right)$$
 
+```
+\left( \begin{matrix} 1 & x & x^2 \\ 1 & y & y^2 \\ 1 & z & z^2 \end{matrix}  \right)
+```
+
+pmatrix
+$$\begin{pmatrix} 1 & 2 \\ 3 & 4 \end{pmatrix}$$
+```
+\begin{pmatrix} 1 & 2 \\ 3 & 4 \end{pmatrix}
+```
+
+bmatrix
+$$\begin{bmatrix} 1 & 2 \\ 3 & 4 \end{bmatrix}$$
+```
+\begin{bmatrix} 1 & 2 \\ 3 & 4 \end{bmatrix}
+```
+
+Bmatrix
+$$\begin{Bmatrix} 1 & 2 \\ 3 & 4 \end{Bmatrix}$$
+```
+\begin{Bmatrix} 1 & 2 \\ 3 & 4 \end{Bmatrix}
+```
+
+vmatrix
+$$\begin{vmatrix} 1 & 2 \\ 3 & 4 \end{vmatrix}$$
+```
+\begin{vmatrix} 1 & 2 \\ 3 & 4 \end{vmatrix}
+```
+
+Vmatrix
+$$\begin{Vmatrix} 1 & 2 \\ 3 & 4 \end{Vmatrix}$$
+```
+\begin{Vmatrix} 1 & 2 \\ 3 & 4 \end{Vmatrix}
+```
+
+省略元素
+$$\begin{pmatrix} 1 & a_1 & a_1^2 & \cdots & a_1^n \\ 1 & a_2 & a_2^2 & \cdots & a_2^n \\ \vdots & \vdots & \vdots & \ddots & \vdots \\ 1 & a_m & a_m^2 & \cdots & a_m^n \end{pmatrix}$$
+
+```
+\begin{pmatrix} 1 & a_1 & a_1^2 & \cdots & a_1^n \\ 1 & a_2 & a_2^2 & \cdots & a_2^n \\ \vdots & \vdots & \vdots & \ddots & \vdots \\ 1 & a_m & a_m^2 & \cdots & a_m^n \end{pmatrix}
+```
+
+增广矩阵
+$$\left[ \begin{array}{c|cc} 1 & 2 & 3 \\ 4 & 5 & 6 \end{array} \right]$$
+```
+\left[ \begin{array}{c|cc} 1 & 2 & 3 \\ 4 & 5 & 6 \end{array} \right]
+```
 
 #### 对齐的公式
+$$\begin{aligned} \sqrt{37} & = \sqrt{\frac{73^2-1}{12^2}} \\ & = \sqrt{\frac{73^2}{12^2} \cdot \frac{73^2-1}{73^2}} \\ & = \frac{73}{12} \sqrt{1 - \frac{1}{73^2}} \\ & \approx \frac{73}{12} \left( 1 - \frac{1}{2 \cdot 73^2} \right) \end{aligned}$$
+```
+\begin{align} \sqrt{37} & = \sqrt{\frac{73^2-1}{12^2}} \\ & = \sqrt{\frac{73^2}{12^2} \cdot \frac{73^2-1}{73^2}} \\ & = \frac{73}{12} \sqrt{1 - \frac{1}{73^2}} \\ & \approx \frac{73}{12} \left( 1 - \frac{1}{2 \cdot 73^2} \right) \end{align}
+```
 
 #### 分类表达式
+$$\left. \begin{array}{l} \text{if $n$ is even:} & n/2 \\[2ex] \text{if $n$ is odd:} & 3n+1 \end{array} \right\} = f(n)$$
 
+```
+\left. \begin{array}{l} \text{if $n$ is even:} & n/2 \\[2ex] \text{if $n$ is odd:} & 3n+1 \end{array} \right\} = f(n)
+```
 #### 空间问题
+不要在指数或者积分中使用\frac
+$$\begin{array}{cc} \mathrm{Bad} & \mathrm{Better} \\ \hline \\ e^{i\frac{\pi}{2}} \quad e^{\frac{i\pi}{2}} & e^{i\pi/2} \\ \int_{-\frac{\pi}{2}}^{\frac{\pi}{2}} \sin x \, dx & \int_{-\pi/2}^{\pi/2} \sin x \, dx \\ \end{array}$$
+
+```
+\begin{array}{cc} \mathrm{Bad} & \mathrm{Better} \\ \hline \\ e^{i\frac{\pi}{2}} \quad e^{\frac{i\pi}{2}} & e^{i\pi/2} \\ \int_{-\frac{\pi}{2}}^{\frac{\pi}{2}} \sin x \, dx & \int_{-\pi/2}^{\pi/2} \sin x \, dx \\ \end{array}
+```
+
+使用\mid代替|作为分隔符
+$$\begin{array}{cc} \mathrm{Bad} & \mathrm{Better} \\ \hline \\ \{x | x^2 \in \Bbb Z\} & \{x \mid x^2 \in \Bbb Z \} \end{array}$$
+
+```
+\begin{array}{cc} \mathrm{Bad} & \mathrm{Better} \\ \hline \\ \{x | x^2 \in \Bbb Z\} & \{x \mid x^2 \in \Bbb Z \} \end{array}
+```
+
+多重积分
+$$\begin{array}{cc} \mathrm{Bad} & \mathrm{Better} \\ \hline \\ \int\int_S f(x) \, dy \, dx & \iint_S f(x) \, dy \, dx \\ \int\int\int_V f(x) \, dz \, dy \, dx & \iiint_V f(x) \, dz \, dy \, dx \end{array}$$
+
+```
+\begin{array}{cc} \mathrm{Bad} \mathrm{Better} \\ \hline \\ \int\int_S f(x) \, dy \, dx & \iint_S f(x) \, dy \, dx \\ \int\int\int_V f(x) \, dz \, dy \, dx & \iiint_V f(x) \, dz \, dy \, dx \end{array}
+```
+连分数
+$$x = a_0 + \cfrac{1^2}{a_1+\cfrac{2^2}{a_2+\cfrac{3^2}{a_3+\cfrac{4^2}{a_4+\cdots}}}} \tag{\\cfrac}$$
+
+```
+x = a_0 + \cfrac{1^2}{a_1+\cfrac{2^2}{a_2+\cfrac{3^2}{a_3+\cfrac{4^2}{a_4+\cdots}}}} \tag{\\cfrac}
+```
+
+方程组
+$$\left\{ \begin{array}{c} a_1x+b_1y+c_1z=d_1 \\ a_2x+b_2y+c_2z=d_2 \\ a_3x+b_3y+c_3z=d_3 \end{array} \right.$$
+
+```
+\left\{ \begin{array}{c} a_1x+b_1y+c_1z=d_1 \\ a_2x+b_2y+c_2z=d_2 \\ a_3x+b_3y+c_3z=d_3 \end{array} \right.
+```
+
+还可以这样表示
+$$\begin{cases} a_1x+b_1y+c_1z=d_1 \\ a_2x+b_2y+c_2z=d_2 \\ a_3x+b_3y+c_3z=d_3 \end{cases}$$
+```
+\begin{cases} a_1x+b_1y+c_1z=d_1 \\ a_2x+b_2y+c_2z=d_2 \\ a_3x+b_3y+c_3z=d_3 \end{cases}
+```
+对齐方程组中的=号
+$$\left\{ \begin{aligned} a_1x+b_1y+c_1z&=d_1+e_1 \\ a_2x+b_2y&=d_2 \\ a_3x+b_3y+c_3z&=d_3 \end{aligned} \right.$$
+```
+\left\{ \begin{aligned} a_1x+b_1y+c_1z&=d_1+e_1 \\ a_2x+b_2y&=d_2 \\ a_3x+b_3y+c_3z&=d_3 \end{aligned} \right.
+```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNzExNTMwMDYsLTIwMDQ5MDY2NjZdfQ==
+eyJoaXN0b3J5IjpbLTEzNjYyODE5NTZdfQ==
 -->
